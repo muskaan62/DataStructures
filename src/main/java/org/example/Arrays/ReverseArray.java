@@ -1,5 +1,11 @@
 package org.example.Arrays;
 
+//Given an array of integers nums, reverse the array in-place, so that the first element becomes the last, the second becomes second last, and so on.
+//Example:
+//Input:
+//nums = [1, 2, 3, 4, 5]
+//Output:
+//[5, 4, 3, 2, 1]
 public class ReverseArray {
     public static void main(String[] args) {
         int[] arr = {5,7,9,2,8};

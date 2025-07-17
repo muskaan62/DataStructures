@@ -1,5 +1,18 @@
 package org.example.Arrays;
 
+//Given an array of integers nums, return the second largest distinct element in the array.
+//
+//If no such element exists (i.e., all elements are equal), return -1.
+// Example 1:
+//Input:
+//nums = [3, 5, 2, 5, 1]
+//Output: 3
+//Explanation: Largest = 5, Second largest = 3
+//Example 2:
+//Input:
+//nums = [10, 10, 10]
+//Output: -1
+//Explanation: All elements are equal → no second largest
 public class SecondLargestInArray {
     public static void main(String[] args) {
         int[] arr = {5,5,5};

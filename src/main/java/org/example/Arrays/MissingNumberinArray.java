@@ -1,6 +1,10 @@
 package org.example.Arrays;
 
-// finding missing number in an array containing distinct 1-n elements
+//You are given an array nums containing n distinct numbers taken from the range 0 to n.
+//Return the only number missing from the array.
+//Input:
+//nums = [3, 0, 1]
+//Output:2
 public class MissingNumberinArray {
     public static void main(String[] args) {
         int[] arr = {1,7,6,5,4,2}; // missing number is 4

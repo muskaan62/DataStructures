@@ -1,11 +1,16 @@
 package org.example.Arrays;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class TwoSumArray {
     public static void main(String[] args) {
-        int[] arr = {5,3,4,2,1};
-        int target = 6;
+        int[] arr = {3,5,6,1,2};
+        int target = 3;
         System.out.println("Two Sum using brute force approach: ");
         printArray(twoSum(arr,target));
+        System.out.println("Two Sum using hashmap one pass approach: ");
+        printArray(twoSum2(arr, target));
     }
 
     public static void printArray(int[] arr) {
@@ -26,5 +31,18 @@ public class TwoSumArray {
             }
         }
         return null;
+    }
+
+    // use hashmap two pass
+    public static int[] twoSum2(int[] arr, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+       for (int i=0;i<=arr.length-1;i++) {
+           int complement = target - arr[i]; // find the complement
+           if (map.containsKey(complement)) { // check if complement exists and is not the same index
+               return new int[]{map.get(complement), i}; // return the indices of the two numbers
+           }
+            map.put(arr[i], i); // store the element and its index in the map
+        }
+       return null;
     }
 }

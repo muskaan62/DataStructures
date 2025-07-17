@@ -1,5 +1,10 @@
 package org.example.Arrays;
-
+//
+//Given an array of integers nums, find and return the difference between the maximum and minimum elements in the array.
+//Input:
+//nums = [3, 1, 7, 4, 9]
+//Output:
+//9,1
 public class MinMaxArray {
     public static void main(String[] args) {
         int arr[] = {0,0,1,2};

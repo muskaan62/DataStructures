@@ -1,7 +1,11 @@
 package org.example.Arrays;
 
-import java.util.Arrays;
-
+//Given an integer array nums, move all 0s to the end of the array while maintaining the relative order of the non-zero elements.
+//You must do this in-place without making a copy of the array.
+//Example:
+//Input:
+//nums = [0, 1, 0, 3, 12]
+//Output: [1, 3, 12, 0, 0]
 public class MoveZeroesToEnd {
     public static void main(String[] args) {
         int[] arr = {0, 0,5,6, 12};
