@@ -1,4 +1,4 @@
-package org.example.Algorithms.Search;
+package Datastructures.Algorithms.Search;
 
 //You are given a sorted array of n integers and a target value x.
 // Your task is to write a function that returns the index of x in the array using binary search. If x is not present, return -1.

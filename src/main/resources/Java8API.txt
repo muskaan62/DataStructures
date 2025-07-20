@@ -1,0 +1,62 @@
+🔷 What is the Java Stream API?
+A Stream is a sequence of elements that supports functional-style operations like filter, map, reduce, etc.
+It’s used to process collections (like List, Set) more declaratively and concisely.
+✅ Core Features
+No storage – Stream doesn’t store data; it operates on the source (like a list).
+Functional – You use lambdas and method references.
+Lazy – Intermediate operations are lazy and optimized.
+Can be parallel – You can process data in parallel using .parallelStream().
+🔑 Stream API Workflow
+collection.stream()
+          .filter()      // intermediate
+          .map()         // intermediate
+          .sorted()      // intermediate
+          .collect()     // terminal
+🚀 Common Operations
+1. filter()
+List<String> names = List.of("John", "Jane", "Jack");
+List<String> result = names.stream()
+                           .filter(name -> name.startsWith("J"))
+                           .collect(Collectors.toList());
+2. map()
+List<String> upper = names.stream()
+                          .map(String::toUpperCase)
+                          .collect(Collectors.toList());
+3. forEach()
+names.stream().forEach(System.out::println);
+4. collect()
+List<String> filtered = names.stream()
+                             .filter(n -> n.length() > 3)
+                             .collect(Collectors.toList());
+5. sorted()
+List<Integer> nums = List.of(3, 1, 4);
+List<Integer> sorted = nums.stream()
+                           .sorted()
+                           .collect(Collectors.toList());
+6. distinct()
+List<Integer> distinct = nums.stream()
+                             .distinct()
+                             .collect(Collectors.toList());
+🧠 Intermediate vs Terminal Operations
+Intermediate	Terminal
+filter()	collect()
+map()	forEach()
+sorted()	count()
+distinct()	reduce()
+
+
+1. What is collect()?
+collect() is a terminal operation in the Java Stream API.
+It reduces a stream into a mutable container (like a List, Set, Map, etc.).
+Internally, it uses a Collector to define how to accumulate elements.
+
+2. What is a Collector?
+A Collector is an interface that defines how to:
+Supply a new result container (e.g., new ArrayList<>()).
+Accumulate elements into the container (e.g., list.add(e)).
+Combine partial results (used in parallel streams).
+Finish the result if a final transformation is needed.
+
+What is Collectors?
+Collectors is a utility class that provides ready-made Collector implementations.
+Examples: toList(), toSet(), joining(), groupingBy(), mapping(), partitioningBy(), reducing().

@@ -1,4 +1,4 @@
-package org.example.Arrays;
+package Datastructures.Arrays;
 
 //Given an integer array nums, move all 0s to the end of the array while maintaining the relative order of the non-zero elements.
 //You must do this in-place without making a copy of the array.

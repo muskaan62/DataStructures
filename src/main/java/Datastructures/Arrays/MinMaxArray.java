@@ -1,4 +1,4 @@
-package org.example.Arrays;
+package Datastructures.Arrays;
 //
 //Given an array of integers nums, find and return the difference between the maximum and minimum elements in the array.
 //Input:

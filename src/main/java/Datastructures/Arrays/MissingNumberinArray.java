@@ -1,4 +1,4 @@
-package org.example.Arrays;
+package Datastructures.Arrays;
 
 //You are given an array nums containing n distinct numbers taken from the range 0 to n.
 //Return the only number missing from the array.

@@ -1,4 +1,4 @@
-package org.example.String;
+package Datastructures.String;
 
 
 //Given a string, reverse the entire string, keeping the characters and spaces in their original positions.

@@ -1,4 +1,4 @@
-package org.example.Algorithms.Sort;
+package Datastructures.Algorithms.Sort;
 
 //Implement the Bubble Sort algorithm to sort an array of integers in ascending order.4
 //The Bubble Sort algorithm compares adjacent elements in the array and swaps them if they are in the wrong order.

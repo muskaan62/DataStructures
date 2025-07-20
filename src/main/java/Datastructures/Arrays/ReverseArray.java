@@ -1,4 +1,4 @@
-package org.example.Arrays;
+package Datastructures.Arrays;
 
 //Given an array of integers nums, reverse the array in-place, so that the first element becomes the last, the second becomes second last, and so on.
 //Example:

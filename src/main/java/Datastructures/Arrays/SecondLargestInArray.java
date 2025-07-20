@@ -1,4 +1,4 @@
-package org.example.Arrays;
+package Datastructures.Arrays;
 
 //Given an array of integers nums, return the second largest distinct element in the array.
 //

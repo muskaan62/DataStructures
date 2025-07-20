@@ -1,4 +1,4 @@
-package org.example.Arrays;
+package Datastructures.Arrays;
 
 import java.util.HashMap;
 import java.util.Map;

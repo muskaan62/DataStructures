@@ -1,4 +1,4 @@
-package org.example.String;
+package Datastructures.String;
 
 
 //Problem Statement:

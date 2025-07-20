@@ -1,4 +1,4 @@
-package org.example.String;
+package Datastructures.String;
 
 //Given a string, reverse the order of words in the string. Words are separated by spaces.
 //Example Input:
