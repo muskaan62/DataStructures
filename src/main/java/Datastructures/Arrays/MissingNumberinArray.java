@@ -1,5 +1,7 @@
 package Datastructures.Arrays;
 
+import java.util.HashMap;
+
 //You are given an array nums containing n distinct numbers taken from the range 0 to n.
 //Return the only number missing from the array.
 //Input:
@@ -10,6 +12,7 @@ public class MissingNumberinArray {
         int[] arr = {1,7,6,5,4,2}; // missing number is 4
         System.out.println("Missing number in array: " + findMissingNumber(arr));
         System.out.println("Missing number in array using XOR: " + findMissingNumber2(arr));
+        System.out.println("Missing number in array using HashMap: " + findMissingNubmer3(arr));
     }
 
     // using brute force approach
@@ -35,5 +38,19 @@ public class MissingNumberinArray {
             n ^= arr[i]; // XOR all elements in the array
         }
        return n;
+    }
+
+    // using HashMap
+    public static int findMissingNubmer3(int[] arr) {
+        HashMap<Integer, Boolean> map = new HashMap<>();
+        for (int i=0;i<=arr.length-1;i++) {
+            map.put(arr[i], true); // store all elements in the map
+        }
+        for (int i=1;i<=arr.length;i++) {
+            if (!map.containsKey(i)) { // check if the number is not in the map
+                return i; // return the missing number
+            }
+        }
+        return -1;
     }
 }
